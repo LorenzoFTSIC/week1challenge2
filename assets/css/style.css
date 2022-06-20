@@ -1,0 +1,23 @@
+.navList{
+    list-style: none;
+}
+
+header {
+    padding: 40px;
+    background: darkslategray;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
