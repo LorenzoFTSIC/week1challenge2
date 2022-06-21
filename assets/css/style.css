@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: slategray;
     font-family: "Proxima Nova", sans-serif ;
@@ -11,13 +15,17 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0px;
-    z-index: 2;
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 main {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding-top: 115px;
 }
 
 section {
@@ -54,18 +62,6 @@ h2 {
     color: white
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 45px;
-}
-
-nav ul li {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 section h2 {
     width: 150px;
     border-bottom: 5px;
@@ -73,6 +69,61 @@ section h2 {
     border-color: darkslategray;
     text-align: center;
     line-height: 1.5;
+    padding-top: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    right: 40px;
+}
+
+nav ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+div a {
+    padding-top: 30px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.placeholder {
+    background-image: url(images/placeholder.png);
+    display: block;
+    margin: 0 auto;
+  }
+
+#primary {
+    background-image: url(images/placeholder.png);
+    display: block;
+    margin: 0 auto;
+}
+
+.navList {
+    list-style: none;
+}
+
+.test {
+    background-color: red;
+}
+
+.spacing {
+    width: 43vw;
+}
+
+#bannerImg {
+    width: 100vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    z-index: -2;
 }
 
 #bannerText {
@@ -85,33 +136,26 @@ section h2 {
     text-align: center;
     width: 310px;
     height: 40px;
-    line-height: .3;
     border-radius: 15px;
     z-index: -1;
-    transform: scale(.7)
-    
-}
-
-.navList {
-    list-style: none;
-}
-
-.test {
-    background-color: red;
-}
-
-#bannerImg {
-    width: 100vw;
-    height: 30vh;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    z-index: -2;
+    transform: scale(.7);
+    padding-top: 0;  
+    padding-bottom: 5px  
 }
 
 #sectionBanner {
     display: flex;
     flex-wrap: nowrap;
+}
+
+#works {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    border: 2px solid;
+    border-color: white;
+
 }
 
 @media screen and (min-width: 540px) {
