@@ -133,10 +133,6 @@ a, a:visited, a:hover, a:active {
     transform: scale(.8);
 }
 
-#primaryWork {
-    flex-grow: 1;
-}
-
 #workHeader {
     width: 100%;
     display: flex;
@@ -219,6 +215,7 @@ a, a:visited, a:hover, a:active {
     }
 
     .placeholder {
-        transform: scale(1);
+        height: 360px;
+        width: 640px;
     }
 }
